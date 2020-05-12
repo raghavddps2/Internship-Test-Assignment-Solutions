@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responses</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+<style>
+    table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+</style>
+</head>
+<body>
+    <a href="/"><button type="submit" class="btn btn-info" style="position: absolute; right: 0;margin-right: 150px;">Go to home</button></a>
+    <h1 style="color: indigo;display:block;text-align:center">Thank you!</h1>
+    <h2 style="color: indigo;display:block;text-align:center">You have received all the submissions on your Mail Id too.</h1>
+
+    <div class="contact-form"> 
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+
+            {% for i in data %}
+                <tr>
+                    <td>{{ i }}</td>
+                    <td>{{ data[i] }}</td>
+                </tr>
+            {% endfor %}    
+
+        </table>
+
+        </div>
+    </div>
+
+</body>
+</script>
+</html>
