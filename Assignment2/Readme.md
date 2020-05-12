@@ -1,7 +1,7 @@
 # Assignment-2
 
 ### How to run the project.
-Project can be found live at: [Link](http://raghavddps23.pythonanywhere.com/)
+Project can be found live at: [Link to the small project](http://raghavddps23.pythonanywhere.com/)
     
     > Before, running at your local system, please make sure that you have flask installed.
 
