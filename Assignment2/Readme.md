@@ -1,7 +1,7 @@
 # Assignment-2
 
 ### How to run the project.
-Project can be found live at: [Link to the small project](http://raghavddps23.pythonanywhere.com/)
+Project can be found live at: [Link to the small project](http://raghavddps23.pythonanywhere.com/)(The backend functionality(mail sending) won't work, because of security reasons, I removed the less secure app's access hoping that it would have been evaluated by now.
     
     > Before, running at your local system, please make sure that you have flask installed.
 
